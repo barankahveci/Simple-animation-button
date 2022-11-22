@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: gray;
+}
+
+.btn{
+    background: #ffc107;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+.btn::before{
+    color: white;
+    font-family:'Ionicons';
+    content: '\f34a';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    transition: 0.5s all;
+    color: black;
+}
+.btn:hover::before{
+    top: -30px;
+}
+.btn::after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 140%;
+    font-size: 40px;
+    transition: 0.5s all;
+}
+.btn:hover::after{
+    top: 50%;
+}
